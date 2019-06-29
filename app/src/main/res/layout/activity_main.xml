@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/simple_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple animation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/simple_animation_on_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple animation on click"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simple_animation" />
+
+    <Button
+        android:id="@+id/simple_animation_on_swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simple animation on swipe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simple_animation_on_click" />
+
+    <Button
+        android:id="@+id/simple_animation_custom_attribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Custom attribute animation on swipe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simple_animation_on_swipe" />
+
+    <Button
+        android:id="@+id/animation_filter_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ImageFilterView animation on swipe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/simple_animation_custom_attribute" />
+
+    <Button
+        android:id="@+id/animation_key_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation with key position"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_filter_view" />
+
+    <Button
+        android:id="@+id/animation_key_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation with key cycle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_key_position" />
+
+    <Button
+        android:id="@+id/animation_key_position_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation with key position and cycle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_key_cycle" />
+
+    <Button
+        android:id="@+id/animation_key_attribute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation with key attribute"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_key_position_cycle" />
+
+    <Button
+        android:id="@+id/animation_key_time_cycle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation with key time cycle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_key_attribute" />
+
+    <Button
+        android:id="@+id/rotating_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotating end"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_key_time_cycle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_scene_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:showPaths="true"
+    app:layoutDescription="@xml/animation_filter_view">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/actor"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:textColor="#000"
+        android:textSize="78sp"
+        app:srcCompat="@drawable/hoford"
+        app:altSrc="@drawable/roard"
+        app:crossfade="0"/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

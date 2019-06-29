@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/starting_set">
+
+        <Constraint
+            android:id="@+id/actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/ending_set">
+
+        <Constraint
+            android:id="@+id/actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </ConstraintSet>
+
+    <Transition
+        android:id="@+id/my_transition"
+        app:constraintSetEnd="@+id/ending_set"
+        app:constraintSetStart="@+id/starting_set"
+        app:duration="2000">
+
+        <OnClick
+            app:clickAction="transitionToEnd"
+            app:targetId="@+id/actor" />
+
+        <KeyFrameSet android:id="@+id/my_keys">
+
+            <KeyTimeCycle
+                android:rotation="50"
+                app:framePosition="80"
+                app:motionProgress="4"
+                app:motionTarget="@+id/actor"
+                app:waveDecay="1"
+                app:wavePeriod="1"
+                app:waveShape="sin" />
+
+            <KeyTimeCycle
+                android:scaleX="2"
+                app:framePosition="80"
+                app:motionProgress="4"
+                app:motionTarget="@+id/actor"
+                app:waveDecay="1"
+                app:wavePeriod="0.5"
+                app:waveShape="bounce" />
+
+            <KeyTimeCycle
+                android:translationY="100dp"
+                app:framePosition="80"
+                app:motionProgress="4"
+                app:motionTarget="@+id/actor"
+                app:waveDecay="1"
+                app:wavePeriod="0.5"
+                app:waveShape="sin" />
+
+            <KeyTimeCycle
+                android:translationX="100dp"
+                app:framePosition="80"
+                app:motionProgress="4"
+                app:motionTarget="@+id/actor"
+                app:waveDecay="1"
+                app:wavePeriod="0.5"
+                app:waveShape="cos" />
+
+        </KeyFrameSet>
+
+    </Transition>
+
+</MotionScene>
